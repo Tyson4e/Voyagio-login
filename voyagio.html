@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <title>Voyagio</title>
+  </head>
+    <nav class="top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg ">
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between shadow-md">
+        <div class="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+          <img class="w-13 leading-relaxed inline-block mr-5 py-2" src="logo.png">
+            <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')">
+            <i class="text-black fas fa-bars"></i></button>
+        </div>
+        <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a class="lg:text-grey lg:hover:text-gray-300 text-gray-500 px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 far text-lg leading-lg mr-2 "></i>Home</a>
+              <a class="lg:text-grey lg:hover:text-gray-300 text-gray-500 px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 far text-lg leading-lg mr-2"></i>Instructions</a>
+              <a class="lg:text-grey lg:hover:text-gray-300 text-gray-500 px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 far text-lg leading-lg mr-2"></i>Requested Rides</a>
+              <a class="lg:text-grey lg:hover:text-gray-300 text-gray-500 px-3 py-4 lg:py-2 flex items-center text-base uppercase font-bold">
+                <i class="lg:text-gray-300 text-gray-500 far text-lg leading-lg mr-2"></i>Latest Trips </a>
+            </li>
+          </ul>
+            <li class="flex items-right">
+              <button class="bg-blue-500 text-white active:bg-gray-100 text-2xl px-5 py-2 rounded-3xl shadow outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-2 mb-3"
+                type="button"
+                style="transition: all 0.15s ease 0s;">
+                <i class="#"></i>Login</button>
+              <button class="bg-orange-500 text-white active:bg-gray-100 text-2xl px-2 py-2 rounded-3xl shadow  outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+              type="button"
+              style="transition: all 0.15s ease 0s;">
+              <i class="#"></i> Sign Up</button>
+            </li>
+              <li class="flex items-right">
+                <img class="h-8 w-16 cursor-pointer" src="us_flag.svg" href="#" >
+                <img class="h-8 w-13 cursor-pointer" src="mk_flag.svg" href="#">
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="block">
+        <img class="block ml-auto mr-auto mt-24 h-1/4 w-1/5 mt-4" src="bkgrounds.png">
+        <h1 class="text-center text-gray-700 text-5xl">Sign Up</h1>
+      </section>
+
+        <section class="flex mt-6">
+         <div class="container mx-auto px-4">
+          <div class="float-left w-1/2">
+            <div class="text-base">
+              <p class="space-x-20 text-2xl text-gray-700">Username:</p>
+              <div class="flex w-4/5 items-stretch mb-3">
+               <span class="h-1/2 leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded-2xl text-base items-center w-5 pl-4 py-4">
+                <i class="fas fa-user"></i>
+               </span>
+              <input type="text" placeholder="Enter Username" class="px-4 py-4 placeholder-gray-400 text-gray-700 bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+             </div>
+           </div>
+          <div class="text-base ">
+            <p class="space-x-20 text-2xl text-gray-700">First name:</p>
+            <div class="flex w-4/5  items-stretch mb-3">
+             <span class="h-1/2 leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded-2xl text-base items-center w-5 pl-4 py-4">
+              <i class="fas fa-medal"></i>
+             </span>
+            <input type="text" placeholder="Enter first name" class="px-4 py-4 placeholder-gray-400 text-gray-700 bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+           </div>
+         </div>
+          <div class="text-base ">
+            <p class="space-x-20 text-2xl text-gray-700">Last name:</p>
+            <div class="flex w-4/5 items-stretch mb-3">
+             <span class="h-1/2 leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded-2xl text-base items-center w-5 pl-4 py-4">
+              <i class="fas fa-medal"></i>
+             </span>
+            <input type="text" placeholder="Enter last name" class="px-4 py-4 placeholder-gray-400 text-gray-700 bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+           </div>
+         </div>
+          <div class="text-base ">
+           <p class="space-x-20 text-2xl text-gray-700">Phone number:</p>
+           <div class="flex w-4/5 items-stretch mb-3">
+            <span class="h-1/2 leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded-2xl text-base items-center w-5 pl-4 py-4">
+              <i class="fas fa-phone"></i>
+            </span>
+           <input type="text" placeholder=" Enter phone number" class="px-4 py-4 placeholder-gray-400 text-gray-700 bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+          </div>
+        </div>
+          <div class="text-base">
+           <p class="space-x-24 text-2xl text-gray-700">Usertype:</p>
+           <span class="text-gray-600">Driver</span>
+            <input class="m-1 space-x-5"type="checkbox">
+            <span class="text-gray-600">Traveller</span>
+           <input class="m-1 space-x-5"type="checkbox">
+          </div>
+          </div>
+          <div class="float-right w-1/2 items-center">
+          <div class="text-base">
+            <p class="space-x-5 text-2xl text-gray-700">Email adress:</p>
+            <div class="flex w-4/5   items-stretch mb-3">
+             <span class="h-1/2 leading-snug font-normal text-center text-gray-400 absolute bg-transparent rounded-2xl text-base items-center w-5 pl-4 py-4">
+              <i class="far fa-envelope"></i>
+             </span>
+             <input type="text" placeholder="Email adress" class="px-4 py-4 placeholder-gray-400 text-gray-700 bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+           </div>
+          <div class="text-base">
+            <p class="space-x-5 text-2xl text-gray-700">Password::</p>
+            <div class="flex w-4/5  items-stretch mb-3">
+             <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+               <i class="fa fa-lock"></i>
+             </span>
+             <input type="text" placeholder="Enter Password" class="px-4 py-4 placeholder-gray-400 text-gray-700 relative bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+           </div>
+          <div class="text-base">
+            <p class="space-x-5 text-2xl text-gray-700">Re-type password::</p>
+            <div class=" flex w-4/5  flex-wrap items-stretch mb-3">
+             <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+               <i class="fa fa-lock"></i>
+             </span>
+             <input type="text" placeholder="Re-type password" class="px-4 py-4 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+           </div>
+          <div class="text-base">
+           <p class="space-x-5 text-2xl text-gray-700">Upload Photo:</p>
+           <div class="flex w-4/5   items-stretch mb-3">
+            <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+              <i class="fas fa-camera"></i>
+            </span>
+            <input type="text" placeholder="Upload" class="px-4 py-4 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+          </div>
+          <div class="flex w-4/5  items-stretch mb-3">
+            <span class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+              <i class="fa fa-lock"></i>
+            </span>
+            <input type="text" placeholder="Photo3232.jpg…." class="px-4 py-4 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded-2xl text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full pl-10"/>
+          </div>
+          </div>
+        </section>
+
+              <section class="block text-center p-40">
+                <div class="container mx-auto px-4">
+                  <button class="text-orange-500 bg-transparent border border-solid border-orange-500 hover:bg-orange-500 hover:text-white active:bg-orange-600 font-bold uppercase px-10 py-5 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all .15s ease">
+                    <i class="fas fa-heart"></i> Sign Up
+                  </button>
+                  <button class="text-blue-500 bg-transparent border border-solid border-blue-500 hover:bg-blue-500 hover:text-white active:bg-pink-600 font-bold uppercase px-10 py-5 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all .15s ease">
+                   <i class="fas fa-heart"></i> Gmail
+                  </button>
+              </div>
+              </section>
+    </main>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
